@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake Game</title>
+</head>
+<body>
+    <div id="gameOver">
+        Вы проиграли, Ваш счёт: <span id="finalScore"></span>
+        <button id="restartButton">Начать заново</button>
+    </div>
+    <button id="startButton">Начать игру</button>
+    <div class="gameContainer" id="gameContainer">
+        <div class="score">
+            Очки: <span id="scoreValue">0</span>
+        </div>
+        <div class="gameField" id="gameField"></div>
+    </div>
+    <audio id="backgroundMusic" loop>
+        <source src="assets/audio/background-music.mp3" type="audio/mp3">
+    </audio>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
